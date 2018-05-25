@@ -1,6 +1,22 @@
 {% extends 'views/layout.nunjucks' %}
 
 {% block content %}
-    <h1> {{ title }} </h1>
-    <p> Welcome to {{ title }} </p>
+<script src="https://cdn.bootcss.com/vue/2.5.16/vue.min.js"></script>
+
+<style>
+.yapi {
+  width: 50%;
+  margin: 100px auto;
+  .yapiForm {
+    margin-top: 20px;
+  }
+  .line {
+    text-align: center;
+  }
+}
+</style>
+<div id='app'>
+  
+</div>
+<script src='/javascripts/yapi.js'></script>
 {% endblock %}
