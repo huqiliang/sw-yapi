@@ -1,22 +1,15 @@
 {% extends 'views/layout.nunjucks' %}
 
 {% block content %}
-<script src="https://cdn.bootcss.com/vue/2.5.16/vue.min.js"></script>
-
-<style>
-.yapi {
-  width: 50%;
-  margin: 100px auto;
-  .yapiForm {
-    margin-top: 20px;
-  }
-  .line {
-    text-align: center;
-  }
-}
-</style>
+<link as=style href='/font/dist/css/app.85e4c57a.css' rel=preload>
+<link as=style href='/font/dist/css/vendors~app.0.f4e7b51a.css' rel=preload>
+<link as=script href='/font/dist/js/app.400deb5f.js' rel=preload>
+<link as=script href='/font/dist/js/vendors~app.dccc615c.js' rel=preload>
+<link href='/font/dist/css/vendors~app.0.f4e7b51a.css' rel=stylesheet>
+<link href='/font/dist/css/app.85e4c57a.css' rel=stylesheet>
 <div id='app'>
   
 </div>
-<script src='/javascripts/yapi.js'></script>
+ <script type='text/javascript' src='/font/dist/js/vendors~app.dccc615c.js'></script>
+<script src='/font/dist/js/app.400deb5f.js'></script>
 {% endblock %}
