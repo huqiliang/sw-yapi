@@ -21,7 +21,8 @@
     "koa-views": "^5.2.1",
     "lodash": "^4.17.10",
     "nunjucks": "~3.0.0 ",
-    "shelljs": "^0.8.2"
+    "shelljs": "^0.8.2",
+    "yapi": "0.0.1"
   },
   "devDependencies": {
     "nodemon": "^1.8.1"

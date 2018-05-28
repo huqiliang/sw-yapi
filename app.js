@@ -7,7 +7,7 @@ const bodyparser = require('koa-bodyparser');
 const logger = require('koa-logger');
 
 const index = require('./routes/index');
-const yapiImp = require('./routes/import');
+const yapiImp = require('./routes/api');
 
 // error handler
 onerror(app);
