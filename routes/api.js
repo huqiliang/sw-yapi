@@ -17,8 +17,10 @@ router.post('/yapi', function(ctx, next) {
   } else {
     try {
       fs.writeFileSync('yapi-import.json', JSON.stringify(json));
+      console.log('test1');
 
       const res = shell.exec('yapi import');
+      console.log('test2');
 
       if (res.code == 0) {
         ctx.body = {
