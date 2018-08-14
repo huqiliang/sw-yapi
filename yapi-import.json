@@ -1,1 +1,1 @@
-{"type":"swagger","token":"11","file":"http://192.168.0.85:2222/v2/api-docs","merge":true,"server":"http://192.168.0.85:3000/"}
+{"type":"swagger","token":"11","file":"http://192.168.0.85:2222/v2/api-docs","merge":true,"server":"http://192.168.0.38:3000/"}

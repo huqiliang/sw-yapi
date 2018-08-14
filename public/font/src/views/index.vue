@@ -52,7 +52,7 @@
       </el-form-item>
       <div class="">
         <el-button type="primary"
-                   @click="update">更新</el-button>
+                   @click="doUpdate">更新</el-button>
       </div>
 
     </el-form>
@@ -90,16 +90,21 @@ export default {
     };
   },
   methods: {
-    async update() {
-      const res = await update({
+    async doUpdate() {
+      update({
         ...this.form
+      }).then(res => {
+        /* eslint-disable */
+        console.log("====================================");
+        console.log(res);
+        console.log("====================================");
+        if (!res.error) {
+          this.$message({
+            message: res.message || "未知错误",
+            type: "success"
+          });
+        }
       });
-      if (!res.error) {
-        this.$message({
-          message: res.message,
-          type: "success"
-        });
-      }
     }
   },
   watch: {
