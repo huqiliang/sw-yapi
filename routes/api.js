@@ -26,15 +26,15 @@ router.post("/yapi", function(ctx, next) {
       fs.writeFileSync("yapi-import.json", JSON.stringify(json));
 
       const res = shell.exec("yapi import");
-      if (res.code != 0) {
-        ctx.body = {
-          result: 0,
-          message: res.stderr || "执行失败"
-        };
-      } else {
+      if (res.code == 0) {
         ctx.body = {
           result: 20000,
           message: `更新成功:${res.stdout}`
+        };
+      } else {
+        ctx.body = {
+          result: 0,
+          message: res.stderr || "执行失败"
         };
       }
     } catch (error) {
