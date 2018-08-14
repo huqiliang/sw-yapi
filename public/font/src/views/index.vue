@@ -48,7 +48,7 @@
       </el-form-item>
       <el-form-item label="yapi地址( server )">
         <el-input v-model="form.server"
-                  disabled></el-input>
+                  ></el-input>
       </el-form-item>
       <div class="">
         <el-button type="primary"
@@ -60,56 +60,56 @@
 </template>
 
 <script>
-import { update } from '@/api/yapi';
+import { update } from "@/api/yapi";
 export default {
-  name: 'Yapi',
+  name: "Yapi",
   data() {
     return {
-      labelPosition: 'left',
+      labelPosition: "left",
       mergeOptions: [
         {
           value: true,
-          label: '是',
+          label: "是"
         },
         {
           value: false,
-          label: '否',
-        },
+          label: "否"
+        }
       ],
       filter: {
-        address: 'http://192.168.0.85:3000',
-        doc: '/v2/api-docs',
+        address: "http://192.168.0.85:3000",
+        doc: "/v2/api-docs"
       },
       form: {
-        type: 'swagger',
-        token: '11',
-        file: 'http://192.168.0.85:2222/v2/api-docs',
+        type: "swagger",
+        token: "11",
+        file: "http://192.168.0.85:2222/v2/api-docs",
         merge: true,
-        server: 'http://192.168.0.85:3000/',
-      },
+        server: "http://192.168.0.38:3000/"
+      }
     };
   },
   methods: {
     async update() {
       const res = await update({
-        ...this.form,
+        ...this.form
       });
       if (!res.error) {
         this.$message({
           message: res.message,
-          type: 'success',
+          type: "success"
         });
       }
-    },
+    }
   },
   watch: {
     filter: {
       handler: function(value) {
         this.form.file = value.address + value.doc;
       },
-      deep: true,
-    },
-  },
+      deep: true
+    }
+  }
 };
 </script>
 
