@@ -77,7 +77,7 @@ export default {
         }
       ],
       filter: {
-        address: "http://192.168.0.85:3000",
+        address: "http://192.168.0.85:2222",
         doc: "/v2/api-docs"
       },
       form: {
