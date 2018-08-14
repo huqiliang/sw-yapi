@@ -26,11 +26,19 @@ router.post("/yapi", function(ctx, next) {
       fs.writeFileSync("yapi-import.json", JSON.stringify(json));
 
       const res = shell.exec("yapi import");
+
       if (res.code == 0) {
-        ctx.body = {
-          result: 20000,
-          message: `更新成功:${res.stdout}`
-        };
+        if (_.isEmpty(res.stdout)) {
+          ctx.body = {
+            result: 0,
+            message: `更新失败:${res.stderr}`
+          };
+        } else {
+          ctx.body = {
+            result: 20000,
+            message: `更新成功:${res.stdout}`
+          };
+        }
       } else {
         ctx.body = {
           result: 0,
