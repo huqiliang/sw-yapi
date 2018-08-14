@@ -90,21 +90,23 @@ export default {
     };
   },
   methods: {
-    async doUpdate() {
+    doUpdate() {
       update({
         ...this.form
-      }).then(res => {
-        /* eslint-disable */
-        console.log("====================================");
-        console.log(res);
-        console.log("====================================");
-        if (!res.error) {
-          this.$message({
-            message: res.message || "未知错误",
-            type: "success"
-          });
-        }
-      });
+      })
+        .then(res => {
+          /* eslint-disable */
+          console.log("====================================");
+          console.log(res);
+          console.log("====================================");
+          if (!res.error) {
+            this.$message({
+              message: res.message || "未知错误",
+              type: "success"
+            });
+          }
+        })
+        .catch();
     }
   },
   watch: {

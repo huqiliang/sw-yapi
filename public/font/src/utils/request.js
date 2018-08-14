@@ -33,7 +33,7 @@ service.interceptors.response.use(
     const res = response.data;
     if (res.result !== 20000) {
       Message({
-        message: res.msg || "未知错误",
+        message: res.message || "未知错误",
         type: "error",
         duration: 5 * 1000
       });
@@ -68,7 +68,7 @@ service.interceptors.response.use(
   error => {
     // console.log('err' + error); // for debug
     Message({
-      message: error.msg || "未知错误",
+      message: error.message || "未知错误",
       type: "error",
       duration: 5 * 1000
     });

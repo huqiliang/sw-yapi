@@ -3,13 +3,13 @@
 {% block content %}
 <link as=style href='/font/dist/css/app.85e4c57a.css' rel=preload>
 <link as=style href='/font/dist/css/vendors~app.0.f4e7b51a.css' rel=preload>
-<link as=script href='/font/dist/js/app.3f3a75ab.js' rel=preload>
-<link as=script href='/font/dist/js/vendors~app.dccc615c.js' rel=preload>
+<link as=script href='/font/dist/js/app.4b720a0b.js' rel=preload>
+<link as=script href='/font/dist/js/vendors~app.476469bc.js' rel=preload>
 <link href='/font/dist/css/vendors~app.0.f4e7b51a.css' rel=stylesheet>
 <link href='/font/dist/css/app.85e4c57a.css' rel=stylesheet>
 <div id='app'>
   
 </div>
-<script type='text/javascript' src='/font/dist/js/vendors~app.dccc615c.js'></script>
-<script src='/font/dist/js/app.3f3a75ab.js'></script>
+<script type='text/javascript' src='/font/dist/js/vendors~app.476469bc.js'></script>
+<script src='/font/dist/js/app.4b720a0b.js'></script>
 {% endblock %}
