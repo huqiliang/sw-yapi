@@ -21,7 +21,11 @@ app.use(
 app.use(json());
 app.use(logger());
 
-app.use(require("koa-static")(__dirname + "/public"));
+app.use(
+  require("koa-static-plus")(__dirname + "/public", {
+    pathPrefix: "/swagger"
+  })
+);
 
 app.use(
   views(__dirname + "/views", {

@@ -1,15 +1,15 @@
 {% extends 'views/layout.nunjucks' %}
 
 {% block content %}
-<link as=style href='http://192.168.0.38:3308/font/dist/css/app.85e4c57a.css' rel=preload>
-<link as=style href='http://192.168.0.38:3308/font/dist/css/vendors~app.0.f4e7b51a.css' rel=preload>
-<link as=script href='http://192.168.0.38:3308/font/dist/js/app.6b6bd7f6.js' rel=preload>
-<link as=script href='http://192.168.0.38:3308/font/dist/js/vendors~app.476469bc.js' rel=preload>
-<link href='http://192.168.0.38:3308/font/dist/css/vendors~app.0.f4e7b51a.css' rel=stylesheet>
-<link href='http://192.168.0.38:3308/font/dist/css/app.85e4c57a.css' rel=stylesheet>
+<link as=style href='/swagger/font/dist/css/app.85e4c57a.css' rel=preload>
+<link as=style href='/swagger/font/dist/css/vendors~app.0.f4e7b51a.css' rel=preload>
+<link as=script href='/swagger/font/dist/js/app.6b6bd7f6.js' rel=preload>
+<link as=script href='/swagger/font/dist/js/vendors~app.476469bc.js' rel=preload>
+<link href='/swagger/font/dist/css/vendors~app.0.f4e7b51a.css' rel=stylesheet>
+<link href='/swagger/font/dist/css/app.85e4c57a.css' rel=stylesheet>
 <div id='app'>
   
 </div>
-<script type='text/javascript' src='http://192.168.0.38:3308/font/dist/js/vendors~app.476469bc.js'></script>
-<script src='http://192.168.0.38:3308/font/dist/js/app.6b6bd7f6.js'></script>
+<script type='text/javascript' src='/swagger/font/dist/js/vendors~app.476469bc.js'></script>
+<script src='/swagger/font/dist/js/app.6b6bd7f6.js'></script>
 {% endblock %}
