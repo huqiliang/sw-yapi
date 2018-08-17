@@ -33,7 +33,7 @@
         <el-col :span="11">
           <el-input v-model="filter.doc"></el-input>
         </el-col>
-        <div>全路径 : {{form.file}}</div>
+        <div>全路径 : <a :href="form.file">{{form.file}}</a></div>
       </el-form-item>
       <el-form-item label="是否覆盖( merge )">
         <!-- <el-input v-model="form.merge"></el-input> -->
@@ -46,10 +46,10 @@
           </el-option>
         </el-select>
       </el-form-item>
-      <el-form-item label="yapi地址( server )">
+      <!-- <el-form-item label="yapi地址( server )">
         <el-input v-model="form.server"
                   ></el-input>
-      </el-form-item>
+      </el-form-item> -->
       <div class="">
         <el-button type="primary"
                    @click="doUpdate">更新</el-button>
