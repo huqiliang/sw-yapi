@@ -22,7 +22,7 @@ app.use(json());
 app.use(logger());
 app.use(
   require("koa-static-plus")(__dirname + "/public", {
-    pathPrefix: "/swagger"
+    pathPrefix: "/swagger/"
   })
 );
 
