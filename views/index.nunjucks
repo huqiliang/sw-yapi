@@ -1,15 +1,15 @@
 {% extends 'views/layout.nunjucks' %}
 
 {% block content %}
-<link as=style href='/font/dist/css/app.85e4c57a.css' rel=preload>
-<link as=style href='/font/dist/css/vendors~app.0.f4e7b51a.css' rel=preload>
-<link as=script href='/font/dist/js/app.bf6647ac.js' rel=preload>
-<link as=script href='/font/dist/js/vendors~app.476469bc.js' rel=preload>
-<link href='/font/dist/css/vendors~app.0.f4e7b51a.css' rel=stylesheet>
-<link href='/font/dist/css/app.85e4c57a.css' rel=stylesheet>
+<link as=style href='font/dist/css/app.85e4c57a.css' rel=preload>
+<link as=style href='font/dist/css/vendors~app.0.f4e7b51a.css' rel=preload>
+<link as=script href='font/dist/js/app.6b6bd7f6.js' rel=preload>
+<link as=script href='font/dist/js/vendors~app.476469bc.js' rel=preload>
+<link href='font/dist/css/vendors~app.0.f4e7b51a.css' rel=stylesheet>
+<link href='font/dist/css/app.85e4c57a.css' rel=stylesheet>
 <div id='app'>
   
 </div>
-<script type='text/javascript' src='/font/dist/js/vendors~app.476469bc.js'></script>
-<script src='/font/dist/js/app.bf6647ac.js'></script>
+<script type='text/javascript' src='font/dist/js/vendors~app.476469bc.js'></script>
+<script src='font/dist/js/app.6b6bd7f6.js'></script>
 {% endblock %}
