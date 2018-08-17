@@ -1,7 +1,7 @@
 <template>
   <div class="yapi">
     <div style="text-align:center">swagger更新:</div>
-    <div style="text-align:center;padding:10px">该接口页面用于从swagger接口直接导入到yapi,请谨慎使用，也可以存成json后在yapi手工导入</div>
+    <div style="padding:10px">该接口页面用于从swagger接口直接导入到yapi,请谨慎使用,你也可以把swagger存成json后在yapi手工导入</div>
     <el-form :label-position="labelPosition"
              :model="form"
              label-width="160px"
