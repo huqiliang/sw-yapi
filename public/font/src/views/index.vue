@@ -1,14 +1,15 @@
 <template>
   <div class="yapi">
     <div style="text-align:center">swagger更新:</div>
+    <div style="text-align:center;padding:10px">该接口页面用于从swagger接口直接导入到yapi,请谨慎使用，也可以存成json后在yapi手工导入</div>
     <el-form :label-position="labelPosition"
              :model="form"
              label-width="160px"
              class="yapiForm">
-      <el-form-item label="类型( type )">
+      <!-- <el-form-item label="类型( type )">
         <el-input v-model="form.type"
                   disabled></el-input>
-      </el-form-item>
+      </el-form-item> -->
       <el-form-item label="项目( token )">
         <el-col :span="20">
           <el-input v-model="form.token"></el-input>
